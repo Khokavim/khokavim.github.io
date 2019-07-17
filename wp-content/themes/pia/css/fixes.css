@@ -1,0 +1,289 @@
+.menu-excerpt {
+  max-width: 155px;
+  min-width: 155px;
+  display: block;
+}
+
+#nav ul li.pressed {
+  width: 40%;
+}
+
+#nav ul li.pressed a {
+  background-color: rgba(0,0,0,.4);
+}
+
+.numbers .item,
+.feature .image, .feature .description {
+  visibility: hidden;
+}
+
+#player {
+  opacity: 0;
+  transition: all 500ms ease-out;
+  transform: translate(-50%, -50%);
+  left: 50%!important;
+  top: 50%!important;
+  position: absolute;
+}
+
+#player.active  {
+  opacity: 1;
+  transition: all 500ms ease-out;
+  display:  block!important;
+}
+
+section.page > section .list-box {
+  background-attachment: fixed;
+}
+
+.wpcf7-response-output {
+  color: #fff;
+}
+
+#footer .enquiry .item .submit-btn {
+  margin-bottom: 30px;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+p.gdpr {
+  color: #fff;
+}
+
+.page table td, 
+.page table th
+{
+  padding: 10px;
+  min-width: 240px;
+  font-size: 12px;
+  border: 1px solid #eee;
+}
+
+
+.page table td p, 
+.page table th p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.page table tr:first-child td,
+.page table tr:first-child th {
+  background: #eee;
+}
+
+#nav > div a {
+  background: #fff;
+  overflow: hidden;
+}
+
+#nav > div a:hover span.menu-image {
+  transform: scale(1.05) translate(-50%, -50%);
+}
+
+span.menu-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover!important;
+  transition: all 300ms ease-out;
+  transform: scale(1.01) translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+
+  section.page header {
+    background-attachment: fixed;
+  }
+
+  #nav.active > div:hover a {
+    height: 50vh;
+  }
+
+  #nav.active > div:hover a:hover {
+    height: 50vh;
+  }
+
+  #header.show-nav a.pia {
+    left: 95px;
+  }
+
+  #header ul li a {
+    margin-left: -25px;
+  }
+
+  #header .phone {
+    left: 45px;
+  }
+
+  #header .phone p {
+    font-size: 24px;
+  }
+
+  #header .phone p strong {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  
+  #header ul {
+    white-space: normal;
+    display: flex;
+    align-items: center;
+  }
+
+  #header ul li a {
+    margin: 0px;
+  }
+
+  #header ul li a:last-child {
+    margin-left: 10px;
+  }
+
+  #header ul li a.btn-close {
+    position: absolute;
+    right: -60px;
+    top: -25px;
+  }
+  
+
+  .container, .container-fluid { overflow: hidden; }
+
+  section.page > section .time-line ul li .data {
+    max-width: 100%;
+  }
+
+  #footer .enquiry .item .submit-btn {
+    margin-bottom: 55px;
+  }
+
+
+  #nav > div a {
+    height: 100%;
+  }
+
+  #nav.active > ul:hover li {
+    width: 33.3333%
+  }
+
+  #nav.active > ul:hover li:hover {
+    width: 33.3333%;
+  }
+
+  #nav ul li:hover {
+    width: 33.3333%;
+  }
+
+  #nav ul li a:hover {
+    background-color: rgba(0,0,0,.9);
+  }
+
+  #header.show-nav {
+    height: 100px;
+  }
+
+  #nav {
+    top: 100px;
+  }
+
+  #nav.active {
+    height: calc(100% - 100px);
+  }
+
+  #nav > div {
+    top: 50%;
+  }
+
+  #nav.active > div {
+    height: 50%;
+  }
+
+  #nav.active ul {
+    height: 50%;
+  }
+
+  #nav.active > ul li {
+    height: 100%;
+  }
+
+  #nav.active > ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #nav ul li.pressed a {
+    background-color: rgba(0,0,0,.4);
+  }
+
+
+  #nav ul.pressed li {
+    width: 30%!important;
+  }
+
+  #nav ul li.pressed {
+    width: 40%!important;
+  }
+}
+
+@media (max-width: 375px) {
+  #nav ul li a span.title {
+    left: -20px;
+    bottom: 95px;
+    font-size: 30px;
+  }
+  #nav > div a span {
+    font-size: 22px;
+  }
+}
+
+
+/* IE FIXES */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  #header ul li a {
+    margin-left: 65px;
+  }
+}
+
+section.page > section .list-box .list-services ul li:before,
+section#home .numbers .item strong:before {
+    height: 10px!important;
+    width: 10px!important;
+}
+
+section#home .numbers .item strong:before  {
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.numbers .col-lg-4:first-child strong:before {
+  margin-right: 17px!important;
+  margin-left: -27px!important;
+}
+
+section.page > section .list-services ul li:before {
+  height: 10px!important;
+  width: 10px!important;
+}
+
+body.static-header section.page header {
+  background-attachment: initial!important;
+}
